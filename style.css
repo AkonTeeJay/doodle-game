@@ -1,0 +1,74 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:focus {
+    outline:none;
+}
+
+body {
+    margin: auto;
+    padding: 10px;
+    background-color: whitesmoke;
+    font-style: italic;
+    max-height: 100vh;
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button#start-btn {
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px dashed black;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 25px;
+    font-style: italic;
+    font-family:monospace;
+    margin-left: 25px;
+}
+button#start-btn:hover {
+    cursor: pointer;
+    border: none;
+    color: whitesmoke;
+    background-color: black;
+}
+.score {
+    margin-right: 10px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-board{
+    width: 400px;
+    height: 600px;
+    position: relative;
+    background-color: rgb(75, 71, 71);
+    margin: 0 auto;
+}
+
+.doodler{
+    width: 87px;
+    height: 85px;
+    position: absolute;
+    background-image: url('doodler-guy.png');
+}
+
+.platform{
+    width: 85px;
+    height: 15px;
+    border-radius: 8px;
+    background-color: white;
+    position: absolute;
+}
